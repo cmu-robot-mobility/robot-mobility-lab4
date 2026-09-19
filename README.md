@@ -154,7 +154,7 @@ Make sure you visualize the tree you have expanded, and the path you have chosen
 
 ![rrt](imgs/rrt.png)
 
-You will be rewarded extra credit (10%) for implementing RRT*, or another modified version of RRT (if you do something other than RRT*, make a good argument for why it deserves extra credit). On top of the basic version of RRT, RRT* uses a cost function, and rewires the tree to find a better path to the goal. When the tree has expanded an infinite number of nodes, RRT*'s solution is close to optimal. Figure 3 shows the difference in the tree expanded and path found between RRT and RRT*. The skeleton code provided has sections for RRT* functions as well.
+You will be rewarded extra credit for implementing RRT*, or another modified version of RRT (if you do something other than RRT*, make a good argument for why it deserves extra credit in `SUBMSSION.md`). On top of the basic version of RRT, RRT* uses a cost function, and rewires the tree to find a better path to the goal. When the tree has expanded an infinite number of nodes, RRT*'s solution is close to optimal. Figure 3 shows the difference in the tree expanded and path found between RRT and RRT*. The skeleton code provided has sections for RRT* functions as well.
 
 ---
 
