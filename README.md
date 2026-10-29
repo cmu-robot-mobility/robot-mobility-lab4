@@ -180,8 +180,16 @@ Include **all the waypoint `.csv` files you used** (both the ones for simulation
 | --- | --- |
 | **A1 - Pure Pursuit in sim** | Your Pure Pursuit completing a full lap of a track (Levine, Tepper, etc.), with **both** the full waypoint set and the currently tracked waypoint visualized in RViz. |
 | **A3 - Pure Pursuit on hardware (team)** | The real car following waypoints in the locker area near AIMS, using the PF code provided, shown alongside RViz with the map and your waypoint markers visible. |
-| **B2 - RRT in sim** | Your RRT running in sim with **at least one obstacle** (can just be a static obstable in the way of your global path), showing obstacle avoidance and a visualization of the planned paths and the goal point at each timestep. |
+| **B2 - RRT in sim** | Your RRT running in sim on the Levine map, replanning around **at least one obstacle that meets the requirements listed below**. RViz must show the obstacle, the planned path, and the goal point at each timestep. You do not need to show the car completing an entire lap. |
 | **B3 - RRT on hardware (team)** | The car running RRT in the locker area with **at least one obstacle**, demonstrating obstacle avoidance. |
+
+**Obstacle requirements for B2 and B3**
+
+The obstacle you add to the Levine map and during hardware testing should be:
+
+1. **At least as wide as the car**. The simulated car is about 0.3 m wide, so in sim the obstacle must be at least **0.31 m × 0.31 m (7 × 7 pixels on the Levine map)**. On hardware, use an object at least as wide as the car (e.g. a box).
+2. **Sit directly on your global waypoint path**, so that following the waypoints with Pure Pursuit alone would hit it.
+3. **Leave a gap of at least 2× the car's width (≥ 0.62 m in sim)** between the obstacle and the nearest wall, so that a collision-free path exists.
 
 # VI. Grading Rubric
 
